@@ -10,6 +10,16 @@ import com.om.hibDelete.dto.PersonDTO;
 
 public class PersonDAO {
 	public static void main(String[] args){
+		System.out.println("delete application starts==================================================================");
+		System.out.println("delete application starts==================================================================");
+		System.out.println("delete application starts==================================================================");
+		System.out.println("delete application starts==================================================================");
+		System.out.println("delete application starts==================================================================");
+		System.out.println("delete application starts==================================================================");
+		System.out.println("delete application starts==================================================================");
+		System.out.println("delete application starts==================================================================");
+		System.out.println("delete application starts==================================================================");
+		System.out.println("delete application starts==================================================================");
 		Configuration configuration=new Configuration();
 		configuration.configure();
 		SessionFactory sessionFactory=configuration.buildSessionFactory();
@@ -17,7 +27,7 @@ public class PersonDAO {
 		Transaction transaction=session.beginTransaction();
 		try{
 			transaction.begin();
-		PersonDTO personDTO=(PersonDTO) session.load(PersonDTO.class, 1);
+		PersonDTO personDTO=(PersonDTO) session.load(PersonDTO.class, 2);
 		session.delete(personDTO);
 		transaction.commit();
 	}catch(HibernateException e){
